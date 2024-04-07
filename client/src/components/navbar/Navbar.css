@@ -1,0 +1,211 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.navbar .container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-family: 'Neue-bold';
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  padding:2em 0;
+  background-color: white;
+  box-shadow: 0px 20px 25px 2px white;
+  
+}
+
+.logo{
+  width: 200px;
+}
+
+.logo  .brand-name{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo .brand-logo{
+  display: flex;
+}
+
+
+
+.logo .clima{
+  font-size: 2rem;
+  color: #4cae9b;
+}
+
+.logo .champion{
+  color: #2b2b2b;
+}
+
+
+.logo .ecostart-img{
+  width: 8em;
+}
+
+.logo img{
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+.by{
+  font-family: 'Neue-roman';
+  margin-right: 0.2em;
+  font-size: 14px;
+}
+
+.nav-elements{
+  z-index: 100;
+}
+
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+
+.nav-elements ul li {
+  margin-right: 40px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-elements ul a {
+  font-family: 'Neue-light';
+  font-weight: 600;
+  color: #2b2b2b;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.nav-elements ul a:hover{
+  color: #4cae9b;
+}
+
+.nav-elements ul a.active {
+  color: #4cae9b;
+  position: relative;
+}
+
+.nav-elements ul li.dropdown-li{
+  display: none;
+}
+
+.dropdown-login-inside{
+  display: none;
+}
+
+@media (max-width: 1024px){
+  .nav-elements ul li{
+    font-size: 1rem;
+  }
+}
+
+@media (1225px > width > 950px){
+  .nav-elements ul li.dropdown-li{
+    display: block;
+  }
+  .nav-elements ul li.disappear{
+    display: none ;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+    font-size: 1rem;
+  }
+
+}
+
+
+
+@media (max-width: 1225px){
+
+}
+
+
+@media (max-width: 950px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #e9f5f0;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 270px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+
+  }
+
+  .dropdown-login{
+    display: none;
+  }
+
+  .dropdown-login-inside{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+  }
+}
+
+.fixed-navbar{
+  width: 100%;
+  height: 64px;
+}
+
+
+.static{
+  position: fixed;
+  background-color: white ;
+  box-shadow: 0 0 2px -1px;
+  z-index: 100;
+}
+
+

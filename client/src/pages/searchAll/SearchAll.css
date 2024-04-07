@@ -1,0 +1,65 @@
+.search-all-container *{
+    font-family: 'Neue-roman';
+}
+
+.search-all-container{
+    background-color: #f3f5f2;
+    padding-top: 0em;
+}
+
+
+.search-form{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.search-all-content{
+    padding-top: 0em;
+}
+
+.search-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    padding: 0.2em;
+    border-bottom: 2px solid #e7e7e7;
+    color: #2b2b2b;
+    font-size: 1rem;
+}
+.search-nav ul li{
+    padding: 0.2em;
+}
+
+.search-nav ul li a{
+    padding: 0.5em;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.search-input .MuiInputBase-root{
+    height: 50px;
+}
+
+
+.isactive{
+    color: #4cae9b;
+    background-color: #9fe4d636;
+}
+
+
+@media (max-width: 600px){
+
+    .search-nav ul{
+        gap:0em;
+        justify-content: space-between;
+       
+    }
+  
+    .search-nav li{
+        font-size: 1rem;
+        padding: 0em !important;
+      
+    }
+
+}

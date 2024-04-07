@@ -1,0 +1,130 @@
+.company-profile-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin: 2em;
+    gap: 2em;
+}
+
+.company-profile-container * {
+    margin: 0;
+}
+
+.company-profile-width {
+    background-color: white;
+    flex-basis: 900px;
+    height: max-content;
+}
+
+.company-recommendations{
+    min-width: 300px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.company-recommendations > h3{
+    font-family: 'Neue-roman';
+}
+
+.company-profile-details {
+    display: flex;
+    gap: 1.5em;
+    padding: 1.5em;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.company-profile-img img {
+    display: block;
+    width: 80px; 
+}
+
+.company-profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.company-profile-container h2, h3{
+    padding: 0.5em 0;
+}
+
+.company-profile-description-section,
+.company-profile-locations-section {
+    padding: 1.5em;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.company-profile-locations-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.company-profile-locations-list li {
+    margin-bottom: 0.5em;
+}
+
+.company-profile-container .bold,
+.proposal-container .bold {
+    font-weight: 600;
+    font-family: "Neue-bold";
+    color: #2b3940;
+}
+
+
+.company-profile-container .medium {
+    font-family: "Neue-light";
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #6b6e6f;
+}
+
+.company-profile-container .light {
+    font-family: "Neue-roman";
+    font-size: 1rem;
+    color: #2b3940;
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-family: 'Neue-roman';
+}
+
+.projects div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em
+}
+
+.company-recommendations-list{
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.company-recommendations-list h3{
+    margin-bottom: 0.5em;
+}
+
+.company-recommendation-container{
+    height: 90vh;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media (max-width: 875px){
+    
+  .company-recommendations-list{
+    display: none;
+  }
+}
+
+@media (max-width: 650px){
+    .company-profile-details{
+        flex-direction: column;
+    }
+}

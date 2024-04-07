@@ -1,0 +1,23 @@
+.settings-container .MuiButtonBase-root.MuiButton-root{
+    background-color: #4cae9b;
+}
+
+.activity-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1em 0;
+}
+
+h3{
+    font-family: 'Neue-light';
+    margin: 0;
+}
+
+.entry{
+    font-size: 1rem;
+    font-family: 'Neue-roman';
+    color: #4cae9b;
+    display: block;
+    margin-top: 1.5em
+}
+

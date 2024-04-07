@@ -1,0 +1,115 @@
+
+.more-results{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 1em 0 0;
+    padding-right: 2em;    
+}
+
+.more-results a {
+    background-color: #4cae9b;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    font-family: 'Neue-roman';
+}
+
+.more-results a:hover{
+    transform: scale(1.01);
+}
+
+.more-results a:active{
+    background-color: #4cae9a98;
+}
+
+.search-summary-container{
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.projects-summary{
+    width: 33%;
+    padding: 0 0.5em 0.5em 0.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 300px;
+    height: min-content;
+}
+
+.companies-summary{
+    width: 33%;
+    padding: 0 0.5em 0.5em 0.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 300px;
+    height: min-content;
+}
+
+
+.professionals-summary{
+    width: 33%;
+    padding: 0 0.5em 0.5em 0.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    min-width: 300px;
+    height: min-content;
+}
+
+.professionals-summary h3{
+    padding: 0;
+}
+
+.search-summary-container .section-heading{
+    font-family: 'Neue-light';
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-top: 0.5em;
+}
+
+.projects-summary .projectCard{
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 2px -1px black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+
+}
+
+.projectCard .project-title{
+    font-family: 'Neue-light';
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.projectCard .project-description{
+    font-family: 'Neue-roman';
+}
+
+.projectCard .project-link{
+    margin: 0.5em 0;
+}
+.projectCard .project-link a{
+    font-family: 'Neue-roman';
+    text-decoration: none;
+    background-color: #4cae9b;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}

@@ -1,0 +1,136 @@
+.gigsList {
+  padding: 0px 25px;
+  .filter-section {
+    margin-bottom: 28px;
+    .search-con {
+      text-align: center;
+      .input-field {
+        width: 400px;
+        height: 38px;
+        border-radius: 19px;
+        border: 1px solid #c5c5c5;
+        padding-left: 12px;
+      }
+      .input-field:focus-visible {
+        outline: none;
+      }
+    }
+    .breadcrum-con {
+      margin: 12px 0px;
+      .breadcrum-txt {
+        font-size: 14px;
+        color: #14a800;
+        margin-right: 4px;
+      }
+    }
+    .filter-con {
+      display: flex;
+      .select-field {
+        margin-right: 12px;
+        .select-box {
+          width: 100%;
+          padding: 5px 10px;
+          border-radius: 8px;
+        }
+        .select-box:after {
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid #f00;
+          position: absolute;
+          top: 40%;
+          right: 5px;
+          content: "";
+          z-index: 98;
+        }
+        .select-box:focus-visible {
+          outline: none;
+        }
+      }
+    }
+  }
+  .gig-card {
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    .gigs-list-img {
+      width: 100%;
+      border-top-right-radius: 9px;
+      border-top-left-radius: 9px;
+    }
+    .gig-details {
+      margin: 0 5px 10px 5px;
+      .gigs-title {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 12px;
+      }
+      .deliver-details {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        justify-content: space-between;
+        .timer-txt {
+          display: flex;
+          align-items: center;
+          .clock-img {
+            width: 18px;
+          }
+        }
+      }
+      hr {
+        border-width: 0.1px;
+        opacity: 0.4;
+        margin: 12px 0px;
+      }
+      .seller-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .user-details {
+          display: flex;
+          align-items: center;
+          .user-img {
+            width: 20px;
+            border-radius: 20px;
+            margin-right: 5px;
+          }
+          .user-con {
+            .user-name {
+              font-size: 12px;
+              font-weight: 500;
+            }
+            .level {
+              font-size: 12px;
+              font-weight: 500;
+            }
+          }
+        }
+        .review-con {
+          display: flex;
+          align-items: center;
+          .review-img {
+            width: 24px;
+            margin-right: 4px;
+          }
+          .review-txt {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .filter-con {
+    display: block !important;
+    .select-field {
+      margin-bottom: 12px;
+      margin-right: 0px !important;
+    }
+  }
+  .input-field {
+    width: 100% !important;
+  }
+}

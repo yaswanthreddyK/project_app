@@ -1,0 +1,61 @@
+.skill-container{
+    margin: 1em 0;
+}
+
+.white-background{
+    min-height: 100vh;
+    background-color: white;
+}
+
+.profile-image{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.professional-view-my-profile{
+  margin: 1em 1em;
+}
+
+.professional-view-my-profile *{
+    font-family: 'Neue-roman';
+}
+
+.professional-view-my-profile button{
+    color: #4cae91;
+}
+
+.professional-view-my-profile button:hover{
+    background-color: #4cae91;
+    color: white;
+
+}
+
+.professional-view-my-profile .portfolio-img{
+    max-width: 200px;
+    display: none;
+}
+
+
+.professional-view-my-profile .Mui-expanded {
+    margin: 0px !important;
+    box-shadow: none !important;
+  }
+.professional-view-my-profile .Mui-expanded::before {
+    opacity: 1 !important;
+  }
+.professional-view-my-profile .MuiPaper-rounded {
+    opacity: 1 !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid rgb(241, 241, 241);
+
+  }
+
+
+
+@media (max-width: 720px){
+    .professional-view-my-profile{
+        margin: 0px;
+        padding: 1em;
+    }
+}

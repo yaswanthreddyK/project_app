@@ -1,0 +1,190 @@
+.add-container {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+
+  .info {
+    width: 60%;
+    margin-right: 12px;
+    border: 1px solid #dedede;
+    padding: 20px 20px 45px 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    .input-search {
+      margin: 20px 0px;
+      p {
+        margin-bottom: 4px;
+        font-size: 15px;
+      }
+      .search-box {
+        width: -webkit-fill-available;
+        padding: 12px 0px 12px 12px;
+        border-radius: 8px;
+        border: 1px solid #d5d5d5;
+        font-size: 13px;
+      }
+      .search-box:focus-visible {
+        outline: none;
+      }
+      .skill-label {
+        margin-bottom: 10px;
+      }
+      .skills {
+        .search-box {
+          border: none !important;
+        }
+        .MuiChipsInput-TextField {
+          .MuiInputBase-formControl {
+            position: unset !important;
+            padding: 0px !important;
+            .css-1a3507z {
+              top: auto !important;
+              bottom: 0px !important;
+            }
+
+            input {
+              padding: 0px !important;
+              font-size: 13px;
+              font-family: "Poppins";
+              color: #000000;
+            }
+            // .MuiInputBase-input {
+            // }
+          }
+        }
+      }
+      .skill-txt {
+        border-radius: 12px;
+        border: 1px solid grey;
+        padding: 5px 10px;
+        margin: 0px 2px !important;
+        font-size: 15px;
+      }
+
+      .row {
+        display: flex !important;
+      }
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .uploader {
+      background: #e6eeff;
+      padding: 30px;
+      border-radius: 15px;
+      border: 2px dashed #1f57c3;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: 12px;
+      cursor: pointer;
+
+      .file-uploader {
+        position: absolute;
+        overflow: hidden;
+        color: transparent;
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+    }
+  }
+
+  .details {
+    width: 40%;
+    margin-left: 12px;
+    border: 1px solid #dedede;
+    padding: 20px 20px 45px 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    .web-btn {
+      display: block;
+    }
+    .mobile-btn {
+      display: none;
+    }
+    .post-job-btn {
+      background: #f8f8f8;
+      padding: 10px;
+      border: 1px solid #14a800;
+      color: #14a800;
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    .update-job-btn {
+      background: #14a800;
+      padding: 10px;
+      border: 1px solid #14a800;
+      width: 100%;
+      border-radius: 20px;
+      color: white;
+      margin-bottom: 3rem;
+    }
+    .questions-content {
+      margin-top: 2rem;
+
+      .question {
+        font-weight: 500;
+        font-size: 18px;
+      }
+      .options {
+        margin: 5px 0px;
+        display: flex;
+        input[type="checkbox"] {
+          margin-right: 5px;
+        }
+        .answer {
+          color: #5c5c5c;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .add-container {
+    display: block !important;
+    border: 1px solid #dedede;
+    border-radius: 20px;
+    margin: 0px 15px;
+    .info {
+      width: auto;
+      margin: 0px 0px 12px 0px !important;
+      border: none;
+      padding: 0px;
+      box-shadow: none !important;
+    }
+    .details {
+      width: auto;
+      margin: 0px !important;
+      border: none;
+      padding: 0px;
+      box-shadow: none !important;
+
+      .web-btn {
+        display: none;
+      }
+      .mobile-btn {
+        display: block;
+        margin: 5rem 0rem 0rem 0rem !important;
+      }
+
+      .questions-content {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .row {
+    display: block !important;
+  }
+}

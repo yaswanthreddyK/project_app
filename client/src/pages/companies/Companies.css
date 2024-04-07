@@ -1,0 +1,21 @@
+.companies-container{
+display: flex;
+justify-content: center;
+padding-top: 2em;
+}
+
+.companies-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    width: 80vw;
+} 
+
+
+@media (max-width: 865px){
+    .companies-list{
+        grid-template-columns: 1fr;
+    }
+}
+
+

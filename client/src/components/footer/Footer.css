@@ -1,0 +1,43 @@
+.footer-container{
+    background-color: #243036;
+    padding: 2em;
+    color: white;
+    font-family: "Neue-roman";
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    letter-spacing: 1px;
+}
+
+footer .services{
+    display: flex;
+    gap: 1em;
+}
+
+footer h4{
+    letter-spacing: 1px;
+    color: rgb(182, 182, 182);
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li{
+    padding: 0.2em;
+}
+
+footer .contact-email{
+    color: #25ae81;
+    letter-spacing: 0;
+}
+@media (max-width: 690px){
+    .footer-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

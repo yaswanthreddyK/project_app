@@ -1,0 +1,27 @@
+.applications-container{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.applications-container *{
+    font-family: 'Neue-roman';
+}
+
+.applications-container h5{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.scroll-function{
+    width: 100%;
+    padding: 1.5em;
+    overflow-x: scroll;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+}
+

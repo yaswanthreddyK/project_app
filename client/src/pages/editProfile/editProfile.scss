@@ -1,0 +1,70 @@
+.edit-container *{
+  font-family: 'Neue-roman';
+}
+
+.edit-container {
+  padding: 15px 25px;
+  justify-content: center;
+
+  .info {
+    width: 800px;
+    margin: auto;
+    border: 1px solid #dedede;
+    padding: 20px 20px 45px 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    .input-search {
+      margin: 10px 0px;
+      p {
+        margin-bottom: 4px;
+        font-size: 15px;
+      }
+      .search-box {
+        width: -webkit-fill-available;
+        padding: 12px 0px 12px 12px;
+        border-radius: 8px;
+        border: 1px solid #d5d5d5;
+        font-size: 13px;
+      }
+      .search-box:focus-visible {
+        outline: none;
+      }
+    }
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      .input-search {
+        width: 45%;
+      }
+    }
+    .uploader {
+      background: #e6eeff;
+      padding: 30px;
+      border-radius: 15px;
+      border: 2px dashed #1f57c3;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      margin-top: 12px;
+      cursor: pointer;
+
+      .file-uploader {
+        position: absolute;
+        overflow: hidden;
+        color: transparent;
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .info {
+    width: auto !important;
+  }
+}

@@ -1,0 +1,11 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    font-family: 'Neue-roman';
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    background-color: #25ae81;
+    color: white;
+}

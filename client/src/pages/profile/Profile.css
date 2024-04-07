@@ -1,0 +1,102 @@
+.profile-container{
+   position: relative;
+   min-height: 100vh;
+   display: flex;
+   justify-content: space-between;
+   background-color: #f3f5f2;
+}
+
+ .side-bar{
+    z-index: 1;
+ background-color: white;
+    position: relative;
+
+ }
+
+.side-bar .active{
+  color: "#4cae9b";
+}
+
+ .profile-container .main-page{
+   margin: 1em;
+   margin-bottom: 3em;
+   width: 100%;
+ }
+
+ .toggle-sidebar{
+   display: none;
+   position: absolute;
+   left: 0px;
+   top: 0;
+   transform: translateX(-250px);
+   transition: transform 0.5s ease-in-out;
+   z-index: 50;
+ }
+
+ .side-bar-button{
+   display: none;
+ }
+
+ .skill-container{
+  margin: 1em 0;
+}
+
+.professional-view-profile{
+margin: 2em 5em;
+}
+
+.professional-view-profile *{
+  font-family: 'Neue-roman';
+}
+
+.professional-view-profile button{
+  color: #4cae91;
+}
+
+.professional-view-profile button:hover{
+  background-color: #4cae91;
+  color: white;
+}
+
+.professional-view-profile .portfolio-img{
+  max-width: 200px;
+  display: none;
+}
+
+
+@media (max-width: 720px){
+  .professional-view-profile{
+      margin: 0px;
+      padding: 1em;
+  }
+}
+
+ @media (max-width: 950px){
+   .side-bar{
+      display: none;
+   }
+
+   .toggle-sidebar{
+      display: block;
+   }
+
+   .side-bar-button{
+      display: block;
+   }
+ }
+
+ .side-bar-button{
+   position: fixed;
+   bottom: 0;
+   width: 100vw;
+ }
+
+ .side-bar-button button{
+   width: 100%;
+   padding: 1em;
+   font-size: 1.1rem;
+ }
+
+ .appear{
+   transform: translateX(0px);
+ }

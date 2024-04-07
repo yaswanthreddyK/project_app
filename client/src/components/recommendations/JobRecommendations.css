@@ -1,0 +1,9 @@
+.all-recommendations{
+    display: flex;
+    gap: 1em;
+}
+
+.all-recommendations .company-recommendations{
+    min-width: 350px;
+    padding: 1em;
+}

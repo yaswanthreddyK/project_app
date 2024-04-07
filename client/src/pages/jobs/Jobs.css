@@ -1,0 +1,118 @@
+
+.job-container{
+    display: flex;
+    padding  : 1em;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+background-color: white;
+}
+
+
+.job-container *{
+    font-family: "Neue-roman";
+}
+
+.job-content{
+    display: flex;
+    width: 100vw;
+}
+
+
+
+.job-container .left-side{
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+    padding-left: 2em;
+    border-right: 1px solid #ededed;
+}
+
+.icon{
+    color: #4cae9b;
+}
+
+.job-container .left-side .heading{
+    font-size: 1.15rem;
+}
+
+.job-container .right-side{
+    padding: 2em;
+    flex-grow: 1;   
+    height: 180vh;
+    overflow-y: auto;
+}
+
+.summary-view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1em;
+}
+
+.summary-view > * {
+    border-radius: 5px;
+    box-shadow: 0 0 5px -3px black;
+}
+
+.job-container .Mui-expanded {
+    margin: 0px !important;
+    box-shadow: none !important;
+  }
+ .job-container  .Mui-expanded::before {
+    opacity: 1 !important;
+  }
+ .job-container  .MuiPaper-rounded {
+    opacity: 1 !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid rgb(241, 241, 241);
+
+  }
+
+.utilities{
+    width: 100%;
+    display: flex;
+    gap: 5em;
+   padding: 1em 0.5em;
+    background-color: white;
+}
+
+.advanced-search, .change-view{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.change-view button{
+    padding: 0.5em 0.7em;
+}
+
+@media (max-width: 950px){
+    .job-container{
+       padding: 0;
+    }
+
+    .job-container .left-side{
+        display: none;
+    }
+
+    .job-container .right-side{
+        margin: 0;
+        padding: 0;
+  
+    }
+
+}
+
+@media (max-width: 725px){
+    .job-container .right-side .summary-view{
+      grid-template-columns: 1fr;
+      padding: 0 1em;
+    }
+ 
+    .summary-view img.MuiCardMedia-root{
+             width: 70px;
+             height: 70px;
+    }
+ }

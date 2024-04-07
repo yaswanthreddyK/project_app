@@ -1,0 +1,43 @@
+.proposal-preview-data-container{
+    margin-top: 1em;
+    padding: 1em;
+    padding-top: 0;
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cover-letter{
+    white-space: pre-line;
+}
+
+.proposal-preview-data-container .proposal-content{
+    min-width: 60%;
+}
+.proposal-preview-data-container .heading{
+    font-family: 'Neue-roman';
+    font-size: 1.4rem;
+    color: #2b2b2b;
+}
+
+.proposal-preview-data-container > div > div{
+    border-bottom: 2px solid #f5f5f5;
+    padding: 0.5em 0;
+}
+
+.proposal-preview-data-container .light{
+    font-family: 'Neue-roman';
+    color: #6b6e6f;
+}
+
+.bid-amount{
+    padding: 0.8em 0;
+}
+
+@media (max-width: 850px){
+
+    .proposal-preview-data-container .professional-recommendation-list{
+        display: none;
+    }
+}

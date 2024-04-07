@@ -1,0 +1,55 @@
+
+.invites-container {
+    padding: 1em;
+    overflow-x: scroll;
+    margin-top: 2em;
+    font-family: 'Neue-roman';
+  }
+  
+  .invites-container h1{
+    font-family: 'Neue-light';
+  }
+  .invites-container * {
+    font-family: 'Neue-roman';
+  }
+  
+  .invites-image{
+    width: 50px;
+    height: 50px;
+
+  }
+  .invites-container .invite-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  
+  .invites-table {
+    width: 100%;
+  }
+  
+  .invites-table th {
+    font-size: 1rem;
+    color: #2b2b2b;
+  }
+  
+  .invites-table td {
+    padding: 1em;
+  }
+  
+  .invites-table tr:nth-child(even) {
+    background-color: #f4f5f6;
+  }
+  
+  .invite-actions {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  .flex{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin: 0.5em 0;
+  }
+  

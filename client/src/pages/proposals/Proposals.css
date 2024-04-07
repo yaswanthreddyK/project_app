@@ -1,0 +1,15 @@
+.proposals-container{
+    padding: 1em;
+    overflow-x: scroll;
+    margin-top: 3em;
+}
+
+.proposals-container *{
+    font-family: 'Neue-roman';
+}
+
+.proposals-container .proposal-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}

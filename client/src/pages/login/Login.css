@@ -1,0 +1,60 @@
+.login-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-container .text-container{
+  padding: 1.5em;
+  background-color: #243036;
+  color: rgb(255, 255, 255);
+  max-width: 300px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-container .text-container h4{
+  font-size: 2rem;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.login-container .text-container .text-caption{
+  font-family: 'Neue-roman';
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #dbdbdb;
+}
+
+
+.login-container .stats{
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #5d5d5d;
+  padding: 1em 0.3em 0.3em;
+}
+
+.login-container .stats > *{
+ 
+  width: 40%;
+}
+
+
+.stat-1 .new-jobs-count, .new-companies-count{
+  font-size: 1.5rem;
+}
+
+.stat-1 .type, .stat-2 .type{
+  color: #d0d0d0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 650px){
+  .login-container .text-container{
+    display: none;
+  }
+}

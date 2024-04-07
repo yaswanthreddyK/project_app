@@ -1,0 +1,25 @@
+.job-form{
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    font-family: 'Neue-light';
+}
+
+.job-form form{
+    max-width: 700px;
+    padding: 2em 3em;
+    border-radius: 6px;
+    background-color: white;
+}
+
+h2{
+    margin: 1em 0;
+    columns: #2b2b2b;
+}
+
+
+@media (max-width: 450px){
+    .job-form form{
+        padding: 0.5em 1em;
+    }
+}

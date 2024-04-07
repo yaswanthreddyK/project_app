@@ -1,0 +1,54 @@
+.job-card-container{
+    color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    border-bottom: 2px solid #e7e7e7;
+    padding: 1em 3em;
+}
+
+.job-card-container *{
+    font-family: 'Prompt-light' !important;
+}
+.job-details{
+    display: flex;
+    gap: 0.6em;
+}
+
+.client-details{
+    display: flex;
+    column-gap: 3em;
+    row-gap: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.payment-verified, .location{
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.font-light{
+    font-family: 'Neue-roman' !important;
+}
+
+.job-description, .job-title{
+    letter-spacing: 0.5px;
+}
+
+.font-bold{
+  font-size: 1.25rem;
+  font-family: 'Neue-roman' !important;
+}
+
+@media (max-width: 730px){
+    .job-card-container > div{
+        padding: 1em;
+        padding-top: 0;
+    }
+
+    .client-details{
+        gap: 1em;
+    }
+}
